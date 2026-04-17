@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>SIAF - Versión 2</title>
+<style>
+body{
+  margin:0;
+  font-family:Verdana, sans-serif;
+  background:#cfd8dc;
+}
+
+.topbar{
+  background:#1e3a5f;
+  color:white;
+  padding:10px;
+  display:flex;
+  justify-content:space-between;
+}
+
+.layout{
+  display:grid;
+  grid-template-columns:220px 1fr;
+  height:calc(100vh - 50px);
+}
+
+.sidebar{
+  background:#b0bec5;
+  padding:10px;
+}
+
+.sidebar h2{
+  text-align:center;
+  font-size:16px;
+}
+
+.sidebar a{
+  display:block;
+  padding:8px;
+  margin:4px 0;
+  background:#eceff1;
+  text-decoration:none;
+  color:black;
+  border:1px solid #78909c;
+}
+
+.sidebar a:hover{
+  background:#90caf9;
+}
+
+.main{
+  position:relative;
+  background:linear-gradient(rgba(0,0,50,0.5), rgba(0,0,80,0.8)), url('https://upload.wikimedia.org/wikipedia/commons/3/3e/Potosi.jpg');
+  background-size:cover;
+  color:white;
+}
+
+.data{
+  position:absolute;
+  top:20px;
+  left:20px;
+}
+
+.userbox{
+  position:absolute;
+  top:20px;
+  right:20px;
+  text-align:right;
+}
+
+.footer{
+  position:absolute;
+  bottom:10px;
+  right:20px;
+  font-style:italic;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div><strong>S.I.A.F</strong> - Sistema de Activos Fijos</div>
+  <div>Admin</div>
+</div>
+
+<div class="layout">
+
+<div class="sidebar">
+  <h2>MENÚ</h2>
+  <a href="#">Activos Fijos</a>
+  <a href="#">Grupos y Auxiliares</a>
+  <a href="#">Oficinas</a>
+  <a href="#">Reportes</a>
+  <a href="#">Administradores</a>
+  <a href="#">Login</a>
+  <a href="#">Respaldos</a>
+</div>
+
+<div class="main">
+
+<div class="data">
+  <p><b>Entidad:</b> 821</p>
+  <p><b>Unidad:</b> UA01</p>
+</div>
+
+<div class="userbox">
+  <p><b>Usuario:</b> admin</p>
+  <p><b>Backups:</b> none</p>
+</div>
+
+<div class="footer">Potosí</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
